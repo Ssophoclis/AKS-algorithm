@@ -8,7 +8,7 @@ def perfectPower(n):
     """
     for b in range(2,int(math.log2(n))+1):       
         a=n**(1/b)
-        if a-int(a) == 0:     #checks if a is integer
+        if a-int(a) == 0:    
             return(True)    
     return(False)
 
