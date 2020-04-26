@@ -8,7 +8,6 @@ Implementation of the AKS primality test algorithm in python. To test if a numbe
 Implementation of the AKS primality test algorithm in Golang. To test if a number n is prime, in the main function, initialize the variable n to be the number you want to test. For example, for n= 1009, ```var n int64 = 1009```.
 
 ## TODO:
-- [ ] Fix python implementation.
 - [ ] Make Go implementation faster by using goroutines to the fastPoly function.
 
 
