@@ -13,7 +13,7 @@ func main() {
 }
 
 func aks(n int64) string {
-	if perfectPower(n) == true { 					 //step 1
+	if perfectPower(n) == true { //step 1
 		return ("Composite")
 	}
 
@@ -27,7 +27,7 @@ func aks(n int64) string {
 		return "Prime"
 	}
 
-	var x = []*big.Int{} 						 //step 5
+	var x = []*big.Int{} //step 5
 	var a float64 = 1
 	for a < math.Floor(math.Pow(eulerPhi(r), 1/2)*math.Log2(float64(n))) {
 		x = fastPoly([]*big.Int{big.NewInt(int64(a)), big.NewInt(1)}, n, r)
@@ -36,7 +36,7 @@ func aks(n int64) string {
 		}
 		a++
 	}
-	return "Prime"							 //step 6
+	return "Prime" //step 6
 
 }
 
